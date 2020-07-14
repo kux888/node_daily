@@ -20,8 +20,8 @@
 
 ### Object 
 - 对象有两种属性：数据属性 和 访问器属性
-> 数据属性： value：就是属性的值；writable：决定属性能否被赋值；enumerable：决定 for in 能否枚举该属性；configurable：决定该属性能否被删除或者改变特征值；
-> 访问器属性：getter：函数或 undefined，在取属性值时被调用；setter：函数或 undefined，在设置属性值时被调用；enumerable：决定 for in 能否枚举该属性；configurable：决定该属性能否被删除或者改变特征值；
+> 数据属性： value：就是属性的值；writable：决定属性能否被赋值；enumerable：决定 for in 能否枚举该属性；configurable：决定该属性能否被删除或者改变特征值。
+> 访问器属性：getter：函数或 undefined，在取属性值时被调用；setter：函数或 undefined，在设置属性值时被调用；enumerable：决定 for in 能否枚举该属性；configurable：决定该属性能否被删除或者改变特征值。
 - 我们通常用于定义属性的代码会产生数据属性，其中的 writable、enumerable、configurable 都默认为 true。我们可以使用内置函数 getOwnPropertyDescripter 来查看，如以下代码所示：
 ```javascript
     var o = { a: 1 };
